@@ -21,13 +21,13 @@ export const App = () => {
 
   return (
     <Routes>
-      <Route path="/POapp" element={<HomePage />} />
+      <Route path="/" element={<HomePage />} />
       <Route
         path="/profile"
         element={<AuthenticationGuard component={ProfilePage} />}
       />
       <Route
-        path="/POapp/PO"
+        path="/PO"
         element={<AuthenticationGuard component={POappPage} />}
       />
       <Route path="*" element={<NotFoundPage />} />
