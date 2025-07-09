@@ -1,0 +1,243 @@
+#roottry{
+  width: 780px;
+  height: 800px;
+  margin: auto auto;
+  padding: 2rem;
+  text-align: center;
+  /* background-color: darkgrey; */
+  /* background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(150, 131, 125, 1) 0%, rgba(84, 84, 80, 1) 100%); */
+  background-image: url(/public/teste.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -240px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.boxblock{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 785px;
+  height: 785px;
+  transform: translate(-32px, -32px);
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  align-content: center;
+  justify-content: center;
+  input{
+    width: 150px;
+    height: 30px;
+    text-align: end;
+    margin: 5px;
+    align-self: center;
+    border-radius: 10px;
+    background-color: orange;
+    border-color: silver;
+    border-style: groove;
+  }
+  button{
+    width: 100px;
+    align-self: center;
+    margin-top: 20px;
+    
+  }
+}
+
+
+.title{
+  line-height: 1.1;
+  color: #213547;
+  -webkit-text-stroke: 1.2px white;
+  text-shadow: 3px 3px 8px black;
+}
+
+.lines{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  justify-content: center;
+  gap: 20px;
+  input{
+      width: 75px;
+      height: 30px;
+      font-size: 16px;
+      align-self: center;
+      text-align: end;
+      font-weight: 700;
+    } 
+}
+
+input::placeholder{
+  align-content: center;
+  justify-content: center;
+  font-size: 12px;
+}  
+
+.boxes{
+  margin-left: 10px;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  /* background-color: linear-gradient(to bottom, orangered); */
+  background-color: orangered;
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px black;
+}
+
+.box1{
+  padding: 20px;
+  width: 305px;
+  p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:aliceblue;
+    text-shadow: 1px 1px black;
+    height: 78px;
+    margin:0;
+    font-size: 26px;
+    font-weight: 900;
+  }
+
+  h3{
+    /* color: rgb(80, 80, 80); */
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: #213547;
+    font-weight: 700;
+    text-shadow: 0.5px -0.5px 0px black;
+  }
+}
+
+.box2{
+  width: 145px;
+  padding: 20px;
+  /* border-left: 5px solid darkgrey; */
+  border-left: 5px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(150, 131, 125, 1), rgba(84, 84, 80, 1), rgba(0, 0, 0, 1)) 1;
+  p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:aliceblue;
+    text-shadow: 1px 1px black;
+    height: 78px;
+    margin:0;
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  h3{
+    line-height: 22px;
+    font-size: 22px;
+    /* text-shadow: 0.5px -0.5px 0px black; */
+    color: #213547;
+    font-weight: 900;
+  }
+}
+
+.results:nth-child(3){
+  h3{ 
+      line-height: 45px;
+    }
+}
+
+.finalresults{
+  display: flex;
+  width: 720px;
+  align-content: center;
+  justify-content: center;
+}
+
+#workers-logo{
+  width: 50px;
+  height: 70px;
+}
+
+.finalresultstext{
+  width: 340px;
+  margin-left: 10px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  font-weight: 900;
+  text-shadow: 1px 2px 1px black;
+  color: white;
+  p:first-child{
+    margin-top: 10px;
+  }
+  p{
+    margin: 0px;
+  }
+  #input5{
+    margin-top: 15px ;
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    align-self: center;
+    text-align: end;
+    font-weight: 700;
+  }
+}
+
+.ativos{
+  display: flex;
+  align-self: center;
+  font-size: 18px;
+  gap: 15px;
+  p{
+    color: white;
+    align-self: center;
+  }
+}
+
+.qtdcolaboradores{
+  width: 340px;
+  text-shadow: 1px 2px 1px black;
+  p{
+    margin: 0;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+  }
+  h2{
+    font-size: 40px;
+    margin-top: 10px;
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+  }
+}
+
+.qtdcolaboradoresresult{
+  display: flex;
+  margin: 0;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  height: 80px;
+  justify-items: center;
+  align-items: center;
+  
+  h2{
+    width: 50px;
+  }
+}
+
+.animation{
+  width: 0;
+  position: relative;
+  transform: translate(5px,50px);
+  /* margin-left: 100px; */
+}

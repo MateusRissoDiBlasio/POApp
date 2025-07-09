@@ -1,0 +1,1311 @@
+#root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: none;
+    margin: 0;
+    padding: 0rem;
+    /* background-color: #646cff; */
+    /* background-image: url(../../public/POAPP/vecteezy_abstract-gray-and-white-lines-background_60264112.mov); */
+    
+}
+
+@font-face {
+  font-family: 'AppName';
+  src: url('../../public/fonts/AcademyFilled3D.ttf') format('truetype');
+}
+
+.btns{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transform: translate(0, 70px);
+    button{
+        background-color: orangered;
+        color:white;
+    }
+    button:hover{
+        border-color: #646cff;
+        color: #646cff;
+        
+    }
+ 
+}
+
+.background-video{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+    /* width: 100vw;
+    height: 100vh; */
+    video{
+        width: fit-content;
+        height: 125vh;
+    }
+}
+
+.vids{
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    img{
+        width: 200px;
+        height: 112.5px;
+    }
+    video{
+        width: 200px;
+    }
+}
+
+.top{
+    display: flex;
+    width: 825px;
+    justify-content: space-between;
+
+    #engrenagens{
+        filter: grayscale(100);
+        opacity: 0.6;
+        animation: colored 2s 0.5 forwards, backtograyscale 0.5s 9s ease-out forwards, colored 2s 115s forwards;
+    }
+
+    .engdiv{
+        background-color: white;
+        height: 112px;
+        overflow: hidden;
+        border-radius: 30px;
+        z-index: 0;
+    }
+
+    #engphoto{
+        filter: grayscale(100);
+        opacity: 0.6;
+        animation: colored 1s 9.5s forwards, backtograyscale 0.5s 14.5s ease-out forwards, colored 2s 115s forwards;
+    }
+
+    .engphotodiv{
+        background-color: white;
+        z-index: 0;
+        height: 112px;
+        overflow: hidden;
+        border-radius: 30px;
+    }
+
+    #mix{
+        filter: grayscale(100);
+        opacity: 0.6;
+        animation: colored 2s 15s forwards, backtograyscale 0.5s 45s ease-out forwards, colored 2s 115s forwards;
+    }
+
+    .mixdiv{
+        background-color: white;
+        z-index: 0;
+        height: 112px;
+        overflow: hidden;
+        border-radius: 30px;
+    }
+
+    #factory{
+        filter: grayscale(100);
+        opacity: 0.6;
+        animation: colored 2s 45.5s forwards, backtograyscale 0.5s 59s ease-out forwards, colored 2s 115s forwards;
+    }
+
+    .factorydiv{
+        background-color: white;
+        z-index: 0;
+        height: 112px;
+        overflow: hidden;
+        border-radius: 30px;
+    }
+}
+
+.under{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 825px;
+    video{
+        height: 380px;
+    }
+    
+    .animate__zoomInDown{
+        --animate-duration: 5s;
+    }
+
+    #frying{
+        width: 405px;
+        transform: translate(0, -83px);
+        position: relative;
+        z-index: 0;    
+        filter: grayscale(100);
+        opacity: 0.6;
+        animation: colored 2s 79s forwards, backtograyscale 0.5s 101s ease-out forwards, colored 2s 115s forwards;
+    }
+ 
+    .fryer{
+        height: 350px;
+        border-radius: 30px;
+        overflow: hidden;
+        transform: translate(0, 30px);
+    }
+
+    .fryerdiv{
+        background-color: white;
+        transform: translate(0, 52px);
+        overflow: hidden;
+        border-radius: inherit;
+    }
+
+    .title-div{
+        height:75px;
+        margin-top: 0px ;
+        margin-bottom: 10px;
+        h1{
+            width: 400px;
+            font-family: "AppName", sans-serif;
+            font-size: 50px;
+            line-height: 55px;
+            margin: 0;
+            color: black;
+            font-synthesis: weight;
+            text-shadow:  0px 0px 5px white;
+        }
+
+        #til{
+            /* opacity: 0; */
+            position: relative;
+            width:18px;
+            height: 10px;
+            transform: translate(83px, -71px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+        
+        #cedilha{
+            /* opacity: 0; */
+            position: relative;
+            width:16px;
+            height: 20px;
+            transform: translate(32px, -11px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+    }
+
+    #delivery-girl{
+        width: 215px;
+        filter: grayscale(100);
+        opacity: 0.6;
+        animation: colored 2s 101.5s forwards, backtograyscale 0.5s 109.5s ease-out forwards, colored 2s 115s forwards;
+        transform: translate(-1px, 0px);
+    }
+
+    .delivery{
+        width: 200px;
+        height: 380px;
+        border-radius: 30px;
+        overflow: hidden;
+        z-index: 0;
+        background-color: white;
+    }
+
+    #maquina{
+        height: 380px;
+        filter: grayscale(100);
+        opacity: 0.6;
+        animation: colored 2s 59.5s forwards, backtograyscale 0.5s 77.5s ease-out forwards, colored 2s 115s forwards;
+        transform: translate(0px, -1px);
+    }
+
+    .machine{
+        width: 200px;
+        height: 378px;
+        background-color: white;
+        z-index: 0;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+}
+
+@keyframes colored {
+    from{
+        opacity: 0.6;
+        filter: grayscale(100);
+    }
+
+    to{
+        opacity: 1;
+        filter: grayscale(0);
+    }
+}
+
+@keyframes backtograyscale {
+    from{
+        filter: grayscale(0);
+    }
+
+    to{
+        filter: grayscale(100);
+    }
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.displayinfo{
+        position: relative;
+        z-index: 100;
+        color: black;
+    }
+
+@media screen and (min-width: 360px) and (max-width: 375px) { 
+    .vids{
+        img{
+            width: 180px;
+            height: 112.5px;
+        }
+        video{
+            width: 180px;
+        }
+    }
+
+    .top{
+        display: flex;
+        width: 100vw;
+        margin: 0;
+        justify-content: space-around;
+
+        #engrenagens{
+            display: none;
+        }
+
+        .engdiv{
+            display: none;
+        }
+
+        #engphoto{
+            filter: grayscale(100);
+            height: 112px;
+            opacity: 0.6;
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 1s 1s forwards, backtograyscale 0.5s 5s ease-out forwards, colored 2s 60s forwards;
+            /* ATE AQUI */
+        }
+
+        .engphotodiv{
+            background-color: white;
+            z-index: 0;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #mix{
+            filter: grayscale(100);
+            opacity: 0.6;
+            width: 200px;
+            height: 112px;
+            transform: translate(-2px,0);
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 2s 5.5s forwards, backtograyscale 0.5s 34.5s ease-out forwards, colored 2s 60s forwards;
+            /* ATE AQUI */
+        }
+
+        .mixdiv{
+            background-color: white;
+            z-index: 0;
+            width: 180px;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #factory{
+            display: none;
+        }
+
+        .factorydiv{
+            display: none;
+        }
+    }    
+    .under{
+        display: flex;
+        align-content: center;
+        margin-top: 10px;
+        width: 100vw;
+        justify-content: center;
+        #frying{
+            width: 325px;
+            transform: translate(0, -104px);
+            position: relative;
+            z-index: 0;    
+            filter: grayscale(100);
+            opacity: 0.6;
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 2s 35s forwards, backtograyscale 0.5s 56s ease-out forwards, colored 2s 60s forwards ;
+            /* ATE AQUI */
+        }
+    
+        .fryer{
+            height: 300px;
+            width: 325px;
+            border-radius: 30px;
+            overflow: hidden;
+            transform: translate(0, 30px);
+        }
+
+        .fryerdiv{
+            width: 325px;
+            background-color: white;
+            transform: translate(0, 52px);
+            overflow: hidden;
+            border-radius: inherit;
+        }
+       
+        .title-div{
+        height:75px;
+        margin-top: 0px ;
+        margin-bottom: 10px;
+        h1{
+            width: 325px;
+            font-family: "AppName", sans-serif;
+            font-size: 50px;
+            line-height: 55px;
+            margin: 0;
+            color: black;
+            font-synthesis: weight;
+            text-shadow:  0px 0px 5px white;
+        }
+
+        #til{
+            /* opacity: 0; */
+            position: relative;
+            width:18px;
+            height: 10px;
+            transform: translate(121px, -71px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+        
+        #cedilha{
+            /* opacity: 0; */
+            position: relative;
+            width:16px;
+            height: 20px;
+            transform: translate(70px, -11px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+    }
+
+    #delivery-girl{
+        display: none;
+    }
+
+    .delivery{
+        display: none;
+    }
+
+    #maquina{
+        display: none;
+    }
+
+    .machine{
+        display: none;
+    }
+    }
+    
+    .displayinfo{
+        position: relative;
+        z-index: 100;
+        color: black;
+    }
+
+}
+
+@media screen and (min-width: 376px) and (max-width: 400px) { 
+    .vids{
+        img{
+        width: 180px;
+        height: 112.5px;
+        }
+        video{
+            width: 180px;
+        }
+    }
+
+    .top{
+        display: flex;
+        width: 100vw;
+        margin: 0;
+        /* justify-content: space-around; */
+        justify-content: center;
+        gap: 10px;
+
+        #engrenagens{
+            display: none;
+        }
+
+        .engdiv{
+            display: none;
+        }
+
+        #engphoto{
+            filter: grayscale(100);
+            height: 112px;
+            opacity: 0.6;
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 1s 1s forwards, backtograyscale 0.5s 5s ease-out forwards, colored 2s 60s forwards;
+            /* ATE AQUI */
+        }
+
+        .engphotodiv{
+            background-color: white;
+            z-index: 0;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #mix{
+            filter: grayscale(100);
+            opacity: 0.6;
+            width: 200px;
+            height: 112px;
+            transform: translate(-2px,0);
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 2s 5.5s forwards, backtograyscale 0.5s 34.5s ease-out forwards, colored 2s 60s forwards;
+            /* ATE AQUI */
+        }
+
+        .mixdiv{
+            background-color: white;
+            z-index: 0;
+            width: 180px;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #factory{
+            display: none;
+        }
+
+        .factorydiv{
+            display: none;
+        }
+    }    
+    .under{
+        display: flex;
+        align-content: center;
+        margin-top: 10px;
+        width: 100vw;
+        justify-content: center;
+        #frying{
+            width: 325px;
+            transform: translate(0, -104px);
+            position: relative;
+            z-index: 0;    
+            filter: grayscale(100);
+            opacity: 0.6;
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 2s 35s forwards, backtograyscale 0.5s 56s ease-out forwards, colored 2s 60s forwards ;
+            /* ATE AQUI */
+        }
+    
+        .fryer{
+            height: 300px;
+            width: 325px;
+            border-radius: 30px;
+            overflow: hidden;
+            transform: translate(0, 30px);
+        }
+
+        .fryerdiv{
+            width: 325px;
+            background-color: white;
+            transform: translate(0, 52px);
+            overflow: hidden;
+            border-radius: inherit;
+        }
+       
+        .title-div{
+        height:75px;
+        margin-top: 0px ;
+        margin-bottom: 10px;
+        h1{
+            width: 325px;
+            font-family: "AppName", sans-serif;
+            font-size: 50px;
+            line-height: 55px;
+            margin: 0;
+            color: black;
+            font-synthesis: weight;
+            text-shadow:  0px 0px 5px white;
+        }
+
+        #til{
+            /* opacity: 0; */
+            position: relative;
+            width:18px;
+            height: 10px;
+            transform: translate(121px, -71px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+        
+        #cedilha{
+            /* opacity: 0; */
+            position: relative;
+            width:16px;
+            height: 20px;
+            transform: translate(70px, -11px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+    }
+
+    #delivery-girl{
+        display: none;
+    }
+
+    .delivery{
+        display: none;
+    }
+
+    #maquina{
+        display: none;
+    }
+
+    .machine{
+        display: none;
+    }
+    }
+    
+    .displayinfo{
+        position: relative;
+        z-index: 100;
+        color: black;
+    }
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 549px) { 
+    .vids{
+        img{
+        width: 180px;
+        height: 112.5px;
+        }
+        video{
+            width: 180px;
+        }
+    }
+
+    .top{
+        display: flex;
+        width: 100vw;
+        margin: 0;
+        /* justify-content: space-around; */
+        justify-content: center;
+        gap: 25px;
+
+        #engrenagens{
+            display: none;
+        }
+
+        .engdiv{
+            display: none;
+        }
+
+        #engphoto{
+            filter: grayscale(100);
+            height: 112px;
+            opacity: 0.6;
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 1s 1s forwards, backtograyscale 0.5s 5s ease-out forwards, colored 2s 60s forwards;
+            /* ATE AQUI */
+        }
+
+        .engphotodiv{
+            background-color: white;
+            z-index: 0;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #mix{
+            filter: grayscale(100);
+            opacity: 0.6;
+            width: 200px;
+            height: 112px;
+            transform: translate(-2px,0);
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 2s 5.5s forwards, backtograyscale 0.5s 35.5s ease-out forwards, colored 2s 60s forwards;
+            /* ATE AQUI */
+        }
+
+        .mixdiv{
+            background-color: white;
+            z-index: 0;
+            width: 180px;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #factory{
+            display: none;
+        }
+
+        .factorydiv{
+            display: none;
+        }
+    }    
+    .under{
+        display: flex;
+        align-content: center;
+        margin-top: 10px;
+        width: 100vw;
+        justify-content: center;
+        #frying{
+            width: 325px;
+            transform: translate(0, -104px);
+            position: relative;
+            z-index: 0;    
+            filter: grayscale(100);
+            opacity: 0.6;
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 2s 37s forwards, backtograyscale 0.5s 56s ease-out forwards, colored 2s 60s forwards ;
+            /* ATE AQUI */
+        }
+    
+        .fryer{
+            height: 300px;
+            width: 325px;
+            border-radius: 30px;
+            overflow: hidden;
+            transform: translate(0, 30px);
+        }
+
+        .fryerdiv{
+            width: 325px;
+            background-color: white;
+            transform: translate(0, 52px);
+            overflow: hidden;
+            border-radius: inherit;
+        }
+       
+        .title-div{
+        height:75px;
+        margin-top: 0px ;
+        margin-bottom: 10px;
+        h1{
+            width: 325px;
+            font-family: "AppName", sans-serif;
+            font-size: 50px;
+            line-height: 55px;
+            margin: 0;
+            color: black;
+            font-synthesis: weight;
+            text-shadow:  0px 0px 5px white;
+        }
+
+        #til{
+            /* opacity: 0; */
+            position: relative;
+            width:18px;
+            height: 10px;
+            transform: translate(121px, -71px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+        
+        #cedilha{
+            /* opacity: 0; */
+            position: relative;
+            width:16px;
+            height: 20px;
+            transform: translate(70px, -11px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+    }
+
+    #delivery-girl{
+        display: none;
+    }
+
+    .delivery{
+        display: none;
+    }
+
+    #maquina{
+        display: none;
+    }
+
+    .machine{
+        display: none;
+    }
+    }
+    
+    .displayinfo{
+        position: relative;
+        z-index: 100;
+        color: black;
+    }
+
+}
+
+/* ULTIMO MOBILE ABAIXO */
+@media screen and (min-width: 550px) and (max-width: 640px) { 
+    .vids{
+        img{
+        width: 180px;
+        height: 112.5px;
+        }
+        video{
+            width: 180px;
+        }
+    }
+
+    .top{
+        display: flex;
+        width: 100vw;
+        margin: 0;
+        justify-content: space-around;
+
+        #engrenagens{
+            /* display: none; */
+            filter: grayscale(100);
+            opacity: 0.6;
+            width: 200px;
+            height: 112px;
+            animation: colored 2s 0.5 forwards, backtograyscale 0.5s 9s ease-out forwards, colored 2s 70s forwards;
+        }
+
+        .engdiv{
+            /* display: none; */
+            background-color: white;
+            width: 180px;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+            z-index: 0;
+        }
+
+        #engphoto{
+            filter: grayscale(100);
+            height: 112px;
+            opacity: 0.6;
+            animation: colored 1s 9.5s forwards, backtograyscale 0.5s 14.5s ease-out forwards, colored 2s 70s forwards;
+        }
+
+        .engphotodiv{
+            background-color: white;
+            z-index: 0;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #mix{
+            filter: grayscale(100);
+            opacity: 0.6;
+            width: 200px;
+            height: 112px;
+            transform: translate(-2px,0);
+            animation: colored 2s 15s forwards, backtograyscale 0.5s 45s ease-out forwards, colored 2s 70s forwards;
+        }
+
+        .mixdiv{
+            background-color: white;
+            z-index: 0;
+            width: 180px;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #factory{
+            display: none;
+        }
+
+        .factorydiv{
+            display: none;
+        }
+    }    
+    .under{
+        display: flex;
+        align-content: center;
+        margin-top: 10px;
+        width: 100vw;
+        justify-content: center;
+        #frying{
+            width: 325px;
+            transform: translate(0, -104px);
+            position: relative;
+            z-index: 0;    
+            filter: grayscale(100);
+            opacity: 0.6;
+            animation: colored 2s 45.5s forwards, backtograyscale 0.5s 69s ease-out forwards, colored 2s 70s forwards;
+        }
+    
+        .fryer{
+            height: 300px;
+            width: 325px;
+            border-radius: 30px;
+            overflow: hidden;
+            transform: translate(0, 30px);
+        }
+
+        .fryerdiv{
+            width: 325px;
+            background-color: white;
+            transform: translate(0, 52px);
+            overflow: hidden;
+            border-radius: inherit;
+        }
+       
+        .title-div{
+        height:75px;
+        margin-top: 0px ;
+        margin-bottom: 10px;
+        h1{
+            width: 325px;
+            font-family: "AppName", sans-serif;
+            font-size: 50px;
+            line-height: 55px;
+            margin: 0;
+            color: black;
+            font-synthesis: weight;
+            text-shadow:  0px 0px 5px white;
+        }
+
+        #til{
+            /* opacity: 0; */
+            position: relative;
+            width:18px;
+            height: 10px;
+            transform: translate(121px, -71px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+        
+        #cedilha{
+            /* opacity: 0; */
+            position: relative;
+            width:16px;
+            height: 20px;
+            transform: translate(70px, -11px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+    }
+
+    #delivery-girl{
+        display: none;
+    }
+
+    .delivery{
+        display: none;
+    }
+
+    #maquina{
+        display: none;
+    }
+
+    .machine{
+        display: none;
+    }
+    }
+    
+    .displayinfo{
+        position: relative;
+        z-index: 100;
+        color: black;
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 641px) and (max-width: 759px) { 
+    .vids{
+        img{
+        width: 180px;
+        height: 112.5px;
+        }
+        video{
+            width: 180px;
+        }
+    }
+
+    .top{
+        display: flex;
+        width: 100vw;
+        margin: 0;
+        justify-content: center;
+        gap: 15px;
+
+        #engrenagens{
+            /* display: none; */
+            filter: grayscale(100);
+            opacity: 0.6;
+            width: 200px;
+            height: 112px;
+            animation: colored 2s 0.5 forwards, backtograyscale 0.5s 9s ease-out forwards, colored 2s 70s forwards;
+        }
+
+        .engdiv{
+            /* display: none; */
+            background-color: white;
+            width: 180px;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+            z-index: 0;
+        }
+
+        #engphoto{
+            filter: grayscale(100);
+            height: 112px;
+            opacity: 0.6;
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 1s 9.5s forwards, backtograyscale 0.5s 14.5s ease-out forwards, colored 2s 70s forwards;
+            /* ATE AQUI */
+        }
+
+        .engphotodiv{
+            background-color: white;
+            z-index: 0;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #mix{
+            filter: grayscale(100);
+            opacity: 0.6;
+            width: 200px;
+            height: 112px;
+            transform: translate(-2px,0);
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 2s 15s forwards, backtograyscale 0.5s 45s ease-out forwards, colored 2s 70s forwards;
+            /* ATE AQUI */
+        }
+
+        .mixdiv{
+            background-color: white;
+            z-index: 0;
+            width: 180px;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #factory{
+            display: none;
+        }
+
+        .factorydiv{
+            display: none;
+        }
+    }    
+    .under{
+        display: flex;
+        align-content: center;
+        margin-top: 10px;
+        width: 100vw;
+        justify-content: center;
+        #frying{
+            width: 325px;
+            transform: translate(0, -104px);
+            position: relative;
+            z-index: 0;    
+            filter: grayscale(100);
+            opacity: 0.6;
+            /* ALTERAÇÕES NO ARQUIVO */
+            animation: colored 2s 45.5s forwards, backtograyscale 0.5s 69s ease-out forwards, colored 2s 70s forwards;
+            /* ATE AQUI */
+        }
+    
+        .fryer{
+            height: 300px;
+            width: 325px;
+            border-radius: 30px;
+            overflow: hidden;
+            transform: translate(0, 30px);
+        }
+
+        .fryerdiv{
+            width: 325px;
+            background-color: white;
+            transform: translate(0, 52px);
+            overflow: hidden;
+            border-radius: inherit;
+        }
+       
+        .title-div{
+        height:75px;
+        margin-top: 0px ;
+        margin-bottom: 10px;
+        h1{
+            width: 325px;
+            font-family: "AppName", sans-serif;
+            font-size: 50px;
+            line-height: 55px;
+            margin: 0;
+            color: black;
+            font-synthesis: weight;
+            text-shadow:  0px 0px 5px white;
+        }
+
+        #til{
+            /* opacity: 0; */
+            position: relative;
+            width:18px;
+            height: 10px;
+            transform: translate(121px, -71px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+        
+        #cedilha{
+            /* opacity: 0; */
+            position: relative;
+            width:16px;
+            height: 20px;
+            transform: translate(70px, -11px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+    }
+
+    #delivery-girl{
+        display: none;
+    }
+
+    .delivery{
+        display: none;
+    }
+
+    #maquina{
+        display: none;
+    }
+
+    .machine{
+        display: none;
+    }
+    }
+    
+    .displayinfo{
+        position: relative;
+        z-index: 100;
+        color: black;
+    }
+
+}
+
+/* pronto acima */
+
+@media screen and (min-width: 760px) and (max-width: 849px) { 
+    .vids{
+        img{
+        width: 180px;
+        height: 112.5px;
+        }
+        video{
+            width: 180px;
+        }
+    }
+
+    .top{
+        display: flex;
+        width: 100vw;
+        margin: 0;
+        justify-content: space-around;
+
+        #engrenagens{
+            /* display: none; */
+            filter: grayscale(100);
+            opacity: 0.6;
+            width: 200px;
+            height: 112px;
+        }
+
+        .engdiv{
+            /* display: none; */
+            background-color: white;
+            width: 180px;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+            z-index: 0;
+        }
+
+        #engphoto{
+            filter: grayscale(100);
+            height: 112px;
+            opacity: 0.6;
+        }
+
+        .engphotodiv{
+            background-color: white;
+            z-index: 0;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #mix{
+            filter: grayscale(100);
+            opacity: 0.6;
+            width: 200px;
+            height: 112px;
+            transform: translate(-2px,0);
+        }
+
+        .mixdiv{
+            background-color: white;
+            z-index: 0;
+            width: 180px;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        #factory{
+            /* display: none; */
+            filter: grayscale(100);
+            opacity: 0.6;
+            /* transform: translate(0,10px); */
+            width: 200px;
+        }
+
+        .factorydiv{
+            /* display: none; */
+            background-color: white;
+            z-index: 0;
+            width: 180px;
+            height: 112px;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+    }    
+    .under{
+        display: flex;
+        align-content: center;
+        margin-top: 10px;
+        width: 100vw;
+        justify-content: center;
+        gap: 30px;
+        #frying{
+            width: 325px;
+            transform: translate(0, -104px);
+            position: relative;
+            z-index: 0;    
+            filter: grayscale(100);
+            opacity: 0.6;
+        }
+    
+        .fryer{
+            height: 300px;
+            width: 325px;
+            border-radius: 30px;
+            overflow: hidden;
+            transform: translate(0, 58px);
+        }
+
+        .fryerdiv{
+            width: 325px;
+            background-color: white;
+            transform: translate(0, 52px);
+            overflow: hidden;
+            border-radius: inherit;
+        }
+       
+        .title-div{
+        height:75px;
+        margin-top: 0px ;
+        margin-bottom: 10px;
+        h1{
+            width: 325px;
+            font-family: "AppName", sans-serif;
+            font-size: 50px;
+            line-height: 55px;
+            margin: 0;
+            color: black;
+            font-synthesis: weight;
+            text-shadow:  0px 0px 5px white;
+        }
+
+        #til{
+            /* opacity: 0; */
+            position: relative;
+            width:18px;
+            height: 10px;
+            transform: translate(121px, -71px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+        
+        #cedilha{
+            /* opacity: 0; */
+            position: relative;
+            width:16px;
+            height: 20px;
+            transform: translate(70px, -11px);
+            /* animation: appear 0.3s 2s ease-in forwards; */
+        }
+    }
+
+    #delivery-girl{
+        /* display: none; */
+        width: 215px;
+        filter: grayscale(100);
+        opacity: 0.6;
+    }
+
+    .delivery{
+        /* display: none; */
+        width: 180px;
+        height: 360px;
+        border-radius: 30px;
+        overflow: hidden;
+        z-index: 0;
+        background-color: white;
+    }
+
+    #maquina{
+        /* display: none; */
+        width: 200px;
+        height: 380px;
+        filter: grayscale(100);
+        opacity: 0.6;
+    }
+
+    .machine{
+        /* display: none; */
+        width: 180px;
+        height: 360px;
+        background-color: white;
+        z-index: 0;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    }
+    
+    .displayinfo{
+        position: relative;
+        z-index: 100;
+        color: black;
+    }
+
+}

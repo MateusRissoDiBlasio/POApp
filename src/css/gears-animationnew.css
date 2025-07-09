@@ -1,0 +1,350 @@
+/* #svg1{
+    position: relative;
+    clip-path: circle(60%);
+} */
+
+/* #gear-1{
+    position: relative;
+    transform: translate(-110px, -10px); 
+    clip-path: circle(60%);
+    
+} */
+/* #engineer{
+    position: relative;
+    transform: translate(-110px, -10px);
+    clip-path: circle(60%);
+    
+} */
+
+#svg2{
+    opacity: 0;
+    width: 100px;
+    animation: appear 0.1s 3s forwards;
+    
+}
+.engineer{
+    position: relative;
+    transform: translate(25px, -90px);
+    overflow: hidden;
+    width: 100px;
+    height: 50px;
+    /* clip-path: circle(50%); */
+
+}
+
+#svg1{
+    width: 150px;
+}
+
+.gear{
+    position: relative;
+    overflow: hidden;
+    transform: translate(0px, 0px);
+    width: 150px;
+    height: 150px;    
+}
+
+#svg3{
+    width: 150px;
+}
+
+.gear-2{
+    position: relative;
+    overflow: hidden;
+    transform: translate(98px, -124px);
+    width: 150px;
+    height: 150px;
+    
+}
+
+#svg4{
+    opacity: 0;
+    width: 120px;
+    animation: appear 0.1s 6.6s forwards;
+}
+.workers{
+    transform: translate(135px, -215px);
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+    animation: appear 0.1s 4s forwards;
+}
+
+#svg5{
+    width: 150px;
+}
+
+.gear-3{
+    position: relative;
+    overflow: hidden;
+    transform: translate(23px, -226px);
+    width: 150px;
+    height: 150px;   
+}
+
+.graphwrapper {
+    width: 120px;
+    position: relative;
+    transform: translate(-16px, -367px);
+    svg {
+        position: absolute;
+        margin: 36px 0px 0px 15px;
+    }
+}
+.path {
+    stroke-dasharray: 428;
+    stroke-dashoffset: 428;
+    animation: dash 15s linear forwards;
+    animation-iteration-count: 1;
+    animation-delay: 14s;
+}
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes show {
+    from{
+        display: none;
+        opacity: 0;
+    }
+
+    to {
+        display: initial;
+        opacity: 1;
+    }
+}
+
+#arrow{
+    opacity: 0;
+    animation: show 0.7s 14s forwards;
+}
+
+#gear-1{
+    /* stroke: silver;
+    stroke-width: 5px; */
+    /* fill: gray; */
+    /* transform-origin: 33% 21%; */
+    opacity: 0;
+    transform-origin: 82px 82px;
+    animation: appear 2s ease-in forwards, spin 10s 3s linear, spin 2s 14s 5 linear;
+    /* animation: appear 2s ease-in forwards, spin 2s 3s linear infinite; */
+}
+
+#gear-2{
+    /* fill: gray; */
+    /* transform-origin: 65% 48%; */
+    opacity: 0;
+    transform-origin: 82px 82px;
+    animation: appear 2s 4.2s ease-in forwards, spin 10s 4.6s linear reverse, stopspin 0s 13s forwards, spin 2s 14s 5 linear reverse;
+    /* animation: appear 2s 3.5s ease-in forwards, spin 2s 3.5s linear infinite reverse; */
+    /* animation: spin 2s linear infinite; */
+}
+
+#gear-3{
+    opacity: 0;
+    transform-origin: 82px 82px;
+    animation: appear 1s 13s ease-in forwards, spin 10s 6.2s linear, stopspin 0s 13s forwards, spin 2s 14s 5 linear;
+    /* animation: appear 2s 6s ease-in forwards, spin 2s 6s linear infinite; */
+
+    /* animation: spin 2s linear infinite; */
+}
+
+@keyframes spin{
+
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+
+}
+
+@keyframes stopspin{
+
+/* from {
+    opacity: 1;
+}
+to {
+    opacity: 0;
+} */
+
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(0deg);
+}
+
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.text-info{
+    transform: translate(170px, -330px);
+    /* animation: appear 1s 14s ease-in forwards;  */
+    height: 72px;
+    h3{
+        display: flex;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-shadow: 1px 1px black;
+        color: greenyellow;
+    }
+}
+
+.focus-in-expand {
+    height: 72px;
+	-webkit-animation: focus-in-expand 0.8s 14s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 0.8s 14s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 779px) {
+
+.animation{
+    /* display: none; */
+    width: 0;
+    position: relative;
+    transform: translate(5px,50px);
+    /* margin-left: 100px; */
+  }
+
+
+  #svg1{
+    position: relative;
+    width: 80px;
+    fill: black;
+    z-index: 2;
+  }
+
+  #gear-1{
+    animation: appear 2s ease-in forwards, spin 10s 3s linear;
+  }
+
+  .gear{
+    width: 90px;
+    height: 90px;
+    transform: translate(-65px, -130px);
+
+  }
+
+  #svg2{
+    width: 70px;
+    transform: translate(-15px, 0px);
+  }
+
+  .engineer{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transform: translate(-40px, -199px);
+    z-index: -1;
+    animation: backgroundshow 2s 1.5s forwards;
+  }
+
+  @keyframes backgroundshow {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+      background-color: white;
+      border-radius: 25%;
+    }
+  }
+
+  #svg3{
+    display: none;
+    width: 80px;
+  }
+
+  .gear-2{
+    display: none;  
+    position: relative;
+    overflow: hidden;
+    transform: translate(-130px, -50px);
+    width: 150px;
+    height: 150px;
+      
+  }
+
+  #svg4{
+    display: none;
+    width: 70px;
+  }
+  .workers{
+    display: none;
+    transform: translate(135px, -245px);
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+    animation: appear 0.1s 4s forwards;
+  }
+
+  #svg5{
+    display: none;
+    width: 80px;
+  }
+
+  .gear-3{
+    display: none;
+    position: relative;
+    overflow: hidden;
+    transform: translate(23px, -226px);
+    width: 150px;
+    height: 150px;   
+  }
+
+  .graphwrapper {
+    display: none;
+    width: 120px;
+    position: relative;
+    transform: translate(-15px, -367px);
+    svg {
+        position: absolute;
+        margin: 36px 0px 0px 15px;
+    }
+  }
+
+  .text-info{
+    display: none;
+  }
+
+}
