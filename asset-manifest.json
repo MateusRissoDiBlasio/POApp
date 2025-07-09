@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/POApp/static/css/main.0c1613e5.css",
-    "main.js": "/POApp/static/js/main.55a30d78.js",
+    "main.js": "/POApp/static/js/main.dcc19e1d.js",
     "static/media/teste.png": "/POApp/static/media/teste.4c5c17f5ad17f9c84d24.png",
     "static/media/AcademyFilled3D.ttf": "/POApp/static/media/AcademyFilled3D.0c84167f04f00b37d638.ttf",
     "static/media/workers-logo.png": "/POApp/static/media/workers-logo.bcbdb5024135794fc899.png",
     "index.html": "/POApp/index.html",
     "main.0c1613e5.css.map": "/POApp/static/css/main.0c1613e5.css.map",
-    "main.55a30d78.js.map": "/POApp/static/js/main.55a30d78.js.map"
+    "main.dcc19e1d.js.map": "/POApp/static/js/main.dcc19e1d.js.map"
   },
   "entrypoints": [
     "static/css/main.0c1613e5.css",
-    "static/js/main.55a30d78.js"
+    "static/js/main.dcc19e1d.js"
   ]
 }
