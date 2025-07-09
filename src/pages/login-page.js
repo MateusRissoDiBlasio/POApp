@@ -120,7 +120,7 @@ export const Login = () => {
     <div>
       <div className="background-video">
         <video autoPlay muted loop>
-          <source id="background-video" src="/POAPP/try4.mp4" type="" alt="background-video" />
+          <source id="background-video" src="./POAPP/try4.mp4" type="" alt="background-video" />
         </video>
       </div>
       <div className="vids">
@@ -135,40 +135,40 @@ export const Login = () => {
         <div className="top">
           <div className="engdiv">
             <video id="engrenagens" muted>
-              <source src="/engrenagens.mp4" type="video/mp4" alt="engrenagens" />
+              <source src="./engrenagens.mp4" type="video/mp4" alt="engrenagens" />
             </video>
           </div>
           <div className="engphotodiv">
-            <img id="engphoto" src="/engphoto.jpg" alt="engphoto" />
+            <img id="engphoto" src="./engphoto.jpg" alt="engphoto" />
           </div>
           <div className="mixdiv">
             <video id="mix" muted>
-              <source src="/mix.mp4" type="video/mp4" alt="mix" />
+              <source src="./mix.mp4" type="video/mp4" alt="mix" />
             </video>
           </div>
           <div className="factorydiv">
             <video id="factory" muted>
-              <source src="/factory.mp4" type="video/mp4" alt="factory" />
+              <source src="./factory.mp4" type="video/mp4" alt="factory" />
             </video>
           </div>
         </div>
         <div className="under">
           <div className="machine">
             <video id="maquina" muted>
-              <source src="/maquina.mp4" type="video/mp4" alt="maquina" />
+              <source src="./maquina.mp4" type="video/mp4" alt="maquina" />
             </video>
           </div>
           <div>
             <div className="fryer">
               <div className="title-div">
                 <h1 id="titulo" className="animate__animated animate__zoomInDown">Simulador De Producao</h1>
-                <img id="til" className="animate__animated animate__zoomInDown" src="/til.png" alt="til" />
-                <img id="cedilha" className="animate__animated animate__zoomInDown" src="/cedilha.png" alt="cedilha" />
+                <img id="til" className="animate__animated animate__zoomInDown" src="./til.png" alt="til" />
+                <img id="cedilha" className="animate__animated animate__zoomInDown" src="./cedilha.png" alt="cedilha" />
               </div>
               <div className="fryerdiv">
                 <video id="frying" muted>
                   <source
-                    src="/frying.mp4"
+                    src="./frying.mp4"
                     type="video/mp4"
                     alt="frying"
                   />
@@ -178,7 +178,7 @@ export const Login = () => {
           </div>
           <div className="delivery">
             <video id="delivery-girl" muted>
-              <source src="/delivery.mp4" type="video/mp4" alt="" />
+              <source src="./delivery.mp4" type="video/mp4" alt="" />
             </video>
           </div>
         </div>
