@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export const NavBarBrand = () => {
   return (
     <div className="nav-bar__brand">
-      <NavLink to="/POapp">
+      <NavLink to="/POapp/PO">
         <svg
           width="45px"
           height="45px"

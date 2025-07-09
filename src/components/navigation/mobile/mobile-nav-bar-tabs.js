@@ -8,14 +8,14 @@ export const MobileNavBarTabs = ({ handleClick }) => {
   return (
     <div className="mobile-nav-bar__tabs">
       <MobileNavBarTab
-        path="/  "
+        path="/POapp  "
         label="Home      "
         handleClick={handleClick}
       />
       {isAuthenticated && (
         <>
           <MobileNavBarTab
-            path="/POapp"
+            path="/POapp/PO"
             label="POapp"
             handleClick={handleClick}
           />
