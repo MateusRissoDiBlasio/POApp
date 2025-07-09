@@ -7,7 +7,7 @@ export const LogoutButton = () => {
   const handleLogout = () => {
     logout({
       logoutParams: {
-        returnTo: "https://mateusrissodiblasio.github.io/POapp",
+        returnTo: "https://mateusrissodiblasio.github.io/POApp",
       },
     });
   };
