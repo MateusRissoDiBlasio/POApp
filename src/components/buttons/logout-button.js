@@ -7,7 +7,7 @@ export const LogoutButton = () => {
   const handleLogout = () => {
     logout({
       logoutParams: {
-        returnTo: "/POApp",
+        returnTo: "/",
       },
     });
   };

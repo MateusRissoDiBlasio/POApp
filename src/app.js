@@ -21,7 +21,7 @@ export const App = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/POapp" element={<HomePage />} />
       <Route
         path="/profile"
         element={<AuthenticationGuard component={ProfilePage} />}

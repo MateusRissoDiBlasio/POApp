@@ -7,7 +7,7 @@ export const LoginButton = () => {
   const handleLogin = async () => {
     await loginWithRedirect({
       appState: {
-        returnTo: "/POapp/PO",
+        returnTo: "/PO",
       },
       authorizationParams: {
         prompt: "login",
