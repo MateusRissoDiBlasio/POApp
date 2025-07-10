@@ -144,7 +144,7 @@ border-color: var(--black);
 
   .button__login,
   .button__logout {
-    min-width: 2rem;
+    width: 105px;
 
     border: 0.1rem solid var(--orange);
     color: var(--white);

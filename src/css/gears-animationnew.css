@@ -261,7 +261,7 @@ to {
   .gear{
     width: 90px;
     height: 90px;
-    transform: translate(-65px, -130px);
+    transform: translate(-75px, -130px);
 
   }
 
@@ -274,7 +274,7 @@ to {
     position: relative;
     width: 40px;
     height: 40px;
-    transform: translate(-40px, -199px);
+    transform: translate(-50px, -199px);
     z-index: -1;
     animation: backgroundshow 2s 1.5s forwards;
   }
