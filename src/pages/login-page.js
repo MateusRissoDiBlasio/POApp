@@ -14,8 +14,7 @@ function useWindowDimensions() {
     useEffect(() => {
   function handleResize() {
         setWindowDimensions({
-          width: window.innerWidth,
-          height: window.innerHeight,
+          width: window.innerWidth
         });
       }
       window.addEventListener('resize', handleResize);
@@ -30,7 +29,6 @@ export const Login = () => {
 
   console.log('Window Dimensions');
   console.log(width);
-  console.log(height);
 
   if(width < 550){
     setTimeout(function() {
