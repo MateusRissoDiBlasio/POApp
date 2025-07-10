@@ -278,7 +278,7 @@
         color: black;
     }
 
-@media screen and (orientation: landscape) and (min-width: 600px) and (min-height: 375px) {
+@media screen and (min-width: 500px) and (min-height: 375px) and (orientation: landscape){
     .background-video{
         height: 165vh;
         video{
