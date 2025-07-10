@@ -6,115 +6,115 @@ import "../css/responsive.css";
 import "../css/login.css";
 import "animate.css";
 
-// function useWindowDimensions() {
-//   const [windowDimensions, setWindowDimensions] = useState({
-//       width: window.innerWidth,
-//       height: window.innerHeight,
-//     });
-//     useEffect(() => {
-//   function handleResize() {
-//         setWindowDimensions({
-//           width: window.innerWidth,
-//           height: window.innerHeight,
-//         });
-//       }
-//       window.addEventListener('resize', handleResize);
-//   return () => window.removeEventListener('resize', handleResize);
-//     }, []);
-//   return windowDimensions;
-//   }
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+    useEffect(() => {
+  function handleResize() {
+        setWindowDimensions({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+      window.addEventListener('resize', handleResize);
+  return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  return windowDimensions;
+  }
 
 export const Login = () => {
 
-  // const { width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
-  // console.log('Window Dimensions');
-  // console.log(width);
-  // console.log(height);
+  console.log('Window Dimensions');
+  console.log(width);
+  console.log(height);
 
-  // if(width < 550){
-  //   setTimeout(function() {
-  //     const mixVideo = document.getElementById('mix');
-  //     if(mixVideo !== null){
-  //       mixVideo.play();
-  //     }
-  //   },6500);
+  if(width < 550){
+    setTimeout(function() {
+      const mixVideo = document.getElementById('mix');
+      if(mixVideo !== null){
+        mixVideo.play();
+      }
+    },6500);
     
-  //   setTimeout(function() {
-  //     const fryingVideo = document.getElementById('frying');
-  //     if(fryingVideo !== null){
-  //       fryingVideo.play();
-  //     }
-  //   },37000);
-  // }
+    setTimeout(function() {
+      const fryingVideo = document.getElementById('frying');
+      if(fryingVideo !== null){
+        fryingVideo.play();
+      }
+    },37000);
+  }
 
-  // if(width > 549 && width < 760){
-  //   setTimeout(function() {
-  //     const engrenagensVideo = document.getElementById('engrenagens');
-  //     if(engrenagensVideo !== null){
-  //       engrenagensVideo.play();
-  //     }
-  //   },500);
+  if(width > 549 && width < 760){
+    setTimeout(function() {
+      const engrenagensVideo = document.getElementById('engrenagens');
+      if(engrenagensVideo !== null){
+        engrenagensVideo.play();
+      }
+    },500);
 
-  //   setTimeout(function() {
-  //     const mixVideo = document.getElementById('mix');
-  //     if(mixVideo !== null){
-  //       mixVideo.play();
-  //     }
-  //   },15500);
+    setTimeout(function() {
+      const mixVideo = document.getElementById('mix');
+      if(mixVideo !== null){
+        mixVideo.play();
+      }
+    },15500);
     
-  //   setTimeout(function() {
-  //     const fryingVideo = document.getElementById('frying');
-  //     if(fryingVideo !== null){
-  //       fryingVideo.play();
-  //     }
-  //   },46000);
-  // }
+    setTimeout(function() {
+      const fryingVideo = document.getElementById('frying');
+      if(fryingVideo !== null){
+        fryingVideo.play();
+      }
+    },46000);
+  }
 
-  // if(width > 759){
-  //   setTimeout(function() {
-  //     const engrenagensVideo = document.getElementById('engrenagens');
-  //     if(engrenagensVideo !== null){
-  //       engrenagensVideo.play();
-  //     }
-  //   },500);
+  if(width > 759){
+    setTimeout(function() {
+      const engrenagensVideo = document.getElementById('engrenagens');
+      if(engrenagensVideo !== null){
+        engrenagensVideo.play();
+      }
+    },500);
   
 
-  //   setTimeout(function() {
-  //     const mixVideo = document.getElementById('mix');
-  //     if(mixVideo !== null){
-  //       mixVideo.play();
-  //     }
-  //   },15500);
+    setTimeout(function() {
+      const mixVideo = document.getElementById('mix');
+      if(mixVideo !== null){
+        mixVideo.play();
+      }
+    },15500);
 
-  //   setTimeout(function() {
-  //     const factoryVideo = document.getElementById('factory');
-  //     if(factoryVideo !== null){
-  //       factoryVideo.play();
-  //     }
-  //   },46000);
+    setTimeout(function() {
+      const factoryVideo = document.getElementById('factory');
+      if(factoryVideo !== null){
+        factoryVideo.play();
+      }
+    },46000);
 
-  //   setTimeout(function() {
-  //     const maquinaVideo = document.getElementById('maquina');
-  //     if(maquinaVideo !== null){
-  //       maquinaVideo.play();
-  //     }
-  //   },60000);
+    setTimeout(function() {
+      const maquinaVideo = document.getElementById('maquina');
+      if(maquinaVideo !== null){
+        maquinaVideo.play();
+      }
+    },60000);
 
-  //   setTimeout(function() {
-  //     const fryingVideo = document.getElementById('frying');
-  //     if(fryingVideo !== null){
-  //       fryingVideo.play();
-  //     }
-  //   },79000);
+    setTimeout(function() {
+      const fryingVideo = document.getElementById('frying');
+      if(fryingVideo !== null){
+        fryingVideo.play();
+      }
+    },79000);
 
-  //   setTimeout(function() {
-  //     const deliveryGirlVideo = document.getElementById('delivery-girl');
-  //     if(deliveryGirlVideo !== null){
-  //       deliveryGirlVideo.play();
-  //     }
-  //   },102000);
-  // }
+    setTimeout(function() {
+      const deliveryGirlVideo = document.getElementById('delivery-girl');
+      if(deliveryGirlVideo !== null){
+        deliveryGirlVideo.play();
+      }
+    },102000);
+  }
   
   return (
     <div>
