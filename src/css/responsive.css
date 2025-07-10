@@ -515,7 +515,7 @@
   }  
 }
 
-@media screen and (min-width: 500px) and (min-height: 375px) and (orientation: landscape){
+@media screen and (orientation: landscape){
   #roottry, .boxblock {
     height: 180vh;
   }
