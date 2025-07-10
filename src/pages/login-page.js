@@ -29,7 +29,7 @@ export const Login = () => {
 
   console.log('Window Dimensions');
   console.log(width);
-
+  
   if(width < 550){
     setTimeout(function() {
       const mixVideo = document.getElementById('mix');
