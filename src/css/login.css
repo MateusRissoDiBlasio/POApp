@@ -278,6 +278,17 @@
         color: black;
     }
 
+@media screen and (min-width: 600px) and (orientation: landscape) and (min-height: 375px) {
+    .background-video{
+        height: 165vh;
+        video{
+        width: fit-content;
+        height: 165vh;
+    }
+    }
+
+}
+
 @media screen and (min-width: 360px) and (max-width: 375px) { 
     .vids{
         img{
