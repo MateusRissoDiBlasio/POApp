@@ -28,7 +28,7 @@
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 700px){
+@media screen and (orientation: landscape) and (max-width: 750px){
   .page-layout {
     min-height: 140vh;
   }
