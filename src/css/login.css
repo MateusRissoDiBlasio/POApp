@@ -280,10 +280,10 @@
 
 @media screen and (orientation: landscape) and (max-width: 750px){
     .background-video{
-        height: 165vh;
+        height: 180vh;
         video{
         width: fit-content;
-        height: 165vh;
+        height: 190vh;
     }
     }
 
