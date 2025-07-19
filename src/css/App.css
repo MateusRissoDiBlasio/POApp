@@ -241,6 +241,12 @@ input::placeholder{
   .negativo{
     color: red;
   }
+  .prodload{
+    display: flex;
+    color: #213547;
+    text-shadow: none;
+    margin-top: -10px;    
+  }
 }
 
 .animation{
