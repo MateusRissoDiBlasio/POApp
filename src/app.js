@@ -26,6 +26,8 @@ export const App = () => {
         path="/profile"
         element={<AuthenticationGuard component={ProfilePage} />}
       />
+      {/* JUST FOR TESTING */}
+      {/* <Route path="/POapps" element={<POappPage />} /> */}
       <Route
         path="/PO"
         element={<AuthenticationGuard component={POappPage} />}
