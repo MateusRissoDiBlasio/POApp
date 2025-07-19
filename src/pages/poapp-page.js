@@ -723,7 +723,9 @@ useEffect(() => {
             <div className='qtdcolaboradores'>
               <p>PRODUTIVIDADE</p>
               <div className='qtdcolaboradoresresult'>
-                <h2>{isNaN(sumProdutividadeArredondado) || sumProdutividadeArredondado === '0.0' || input5 === 0 || sumProdutividadeArredondado === 'Infinity' ? 0 : sumProdutividadeArredondado}</h2>
+                {isNaN(sumProdutividadeArredondado) || sumProdutividadeArredondado === '0.0' || input5 === 0 || sumProdutividadeArredondado === 'Infinity' ? <h2> 0 </h2> : ''}
+                {sumProdutividadeArredondado !== 0 && sumProdutividadeArredondado !== 'Infinity' && sumProdutividadeArredondado >= 1 ? <h2 className='positivo'>{sumProdutividadeArredondado}</h2> : ''}
+                {sumProdutividadeArredondado !== 0 && sumProdutividadeArredondado < 1 ? <h2 className='negativo'>{sumProdutividadeArredondado}</h2> : ''}
               </div>
             </div>
           </div>

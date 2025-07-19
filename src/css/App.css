@@ -235,6 +235,12 @@ input::placeholder{
   h2{
     width: 50px;
   }
+  .positivo{
+    color: green;
+  }
+  .negativo{
+    color: red;
+  }
 }
 
 .animation{
