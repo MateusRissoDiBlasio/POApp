@@ -182,10 +182,13 @@ const sumR2Arrendondado = sumR2.toPrecision(2);
 const sumR3Arrendondado = sumR3.toPrecision(2);
 const sumColaboradoresArrendondado = sumColaboradores.toPrecision(2);
 const sumProdutividadeArredondado = sumProdutividade.toPrecision(3);
+const sumProdutividadeArredondadoExcecao = sumProdutividade.toPrecision(4);
 
+const length = sumProdutividade.toString().length
 
-
-
+// console.log(Number.isInteger(sumProdutividadeArredondado))
+// console.log(length)
+// console.log(sumProdutividadeArredondadoExcecao)
 
 
 let prePreparo = [{Triturador_pesagem: "recheios-frios", Tempo:10*60, Rendimento:25, percentual:0}, 
@@ -732,7 +735,11 @@ useEffect(() => {
 
                 {load ? <h3 className='prodload'>aguarde</h3> : ''}
                 {load === false && isNaN(sumProdutividadeArredondado) || load === false && sumProdutividadeArredondado === '0.0' || load === false && input5 === 0 || load === false && sumProdutividadeArredondado === 'Infinity' ? <h2> 0 </h2> : ''}
-                {load === false && sumProdutividadeArredondado !== 0 && sumProdutividadeArredondado !== 'Infinity' && sumProdutividadeArredondado >= 100 ? <h2 className='positivo'>{sumProdutividadeArredondado}%</h2> : ''}
+
+                {load === false && sumProdutividadeArredondado !== 0 && sumProdutividadeArredondado !== 'Infinity' && sumProdutividadeArredondado >= 100 && length >3 ? <h2 className='positivo'>{sumProdutividadeArredondadoExcecao}%</h2> : ''}
+
+                {load === false && sumProdutividadeArredondado !== 0 && sumProdutividadeArredondado !== 'Infinity' && sumProdutividadeArredondado >= 100 && length <=3 ? <h2 className='positivo'>{sumProdutividadeArredondado}%</h2> : ''}
+
                 {load === false &&  sumProdutividadeArredondado !== 0 && sumColaboradoresArrendondado !== '0.0' && sumProdutividadeArredondado < 100 ? <h2 className='negativo'>{sumProdutividadeArredondado}%</h2> : ''}
               </div>
             </div>
