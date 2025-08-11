@@ -181,7 +181,10 @@ const sumR1Arrendondado = sumR1.toPrecision(2);
 const sumR2Arrendondado = sumR2.toPrecision(2);
 const sumR3Arrendondado = sumR3.toPrecision(2);
 const sumColaboradoresArrendondado = sumColaboradores.toPrecision(2);
-const sumProdutividadeArredondado = sumProdutividade.toPrecision(2);
+const sumProdutividadeArredondado = sumProdutividade.toPrecision(3);
+
+
+
 
 
 
@@ -542,15 +545,18 @@ useEffect(() => {
     }else{
         setSumColaboradores(Number(prePreparo[5].Quantidade_De_Funcionarios_Necessarios)+Number(prePreparo[11].Quantidade_De_Funcionarios_Necessarios)+Number(processoDeAcabamento[5].Quantidade_De_Funcionarios_Necessarios)+Number(processoDeAcabamento[10].Quantidade_De_Funcionarios_Necessarios)+Number(Empadas[9].Quantidade_De_Funcionarios_Necessarios)+Number(SalgadinhosBralyxSuper[4].Quantidade_De_Funcionarios_Necessarios)+Number(Lanche140gBralyxDuploRecheio[4].Quantidade_De_Funcionarios_Necessarios)+Number(ProducaoSalgadoLancheForno[5].Quantidade_De_Funcionarios_Necessarios));
     }
-    setSumProdutividade(Number(sumColaboradores)/Number(debouncedValue5));
+    setSumProdutividade((Number(sumColaboradoresArrendondado)/Number(debouncedValue5))*100);
     setLoad(false);
     
   }, 500);
   
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [debouncedValue1, debouncedValue2, debouncedValue3, debouncedValue4, debouncedValue5, sumR1, sumR2, sumR3, sumColaboradores]);
+  }, [debouncedValue1, debouncedValue2, debouncedValue3, debouncedValue4, debouncedValue5, sumR1, sumR2, sumR3, sumColaboradoresArrendondado]);
 
-  
+  // console.log(debouncedValue5)
+  // console.log(sumColaboradoresArrendondado)
+  // console.log(sumColaboradoresArrendondado/debouncedValue5)
+  // console.log(((sumColaboradoresArrendondado/debouncedValue5)*100).toPrecision(3))
   
 
   return (
@@ -726,8 +732,8 @@ useEffect(() => {
 
                 {load ? <h3 className='prodload'>aguarde</h3> : ''}
                 {load === false && isNaN(sumProdutividadeArredondado) || load === false && sumProdutividadeArredondado === '0.0' || load === false && input5 === 0 || load === false && sumProdutividadeArredondado === 'Infinity' ? <h2> 0 </h2> : ''}
-                {load === false && sumProdutividadeArredondado !== 0 && sumProdutividadeArredondado !== 'Infinity' && sumProdutividadeArredondado >= 1 ? <h2 className='positivo'>{sumProdutividadeArredondado}</h2> : ''}
-                {load === false &&  sumProdutividadeArredondado !== 0 && sumColaboradoresArrendondado !== '0.0' && sumProdutividadeArredondado < 1 ? <h2 className='negativo'>{sumProdutividadeArredondado}</h2> : ''}
+                {load === false && sumProdutividadeArredondado !== 0 && sumProdutividadeArredondado !== 'Infinity' && sumProdutividadeArredondado >= 100 ? <h2 className='positivo'>{sumProdutividadeArredondado}%</h2> : ''}
+                {load === false &&  sumProdutividadeArredondado !== 0 && sumColaboradoresArrendondado !== '0.0' && sumProdutividadeArredondado < 100 ? <h2 className='negativo'>{sumProdutividadeArredondado}%</h2> : ''}
               </div>
             </div>
           </div>
